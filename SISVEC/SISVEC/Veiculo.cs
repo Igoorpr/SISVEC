@@ -15,7 +15,7 @@ namespace SISVEC
         private string ano;
         private string CPF_CNPJ;
         private string numeroDoc;
-        private string List<Multas>;
+        private List<Multa> ListaMultas = new List<Multa>();
         private int cargaMaxima;
         private int numPassageiros;
         private int eixos;
@@ -47,6 +47,8 @@ namespace SISVEC
             this.Eixos = eixos;
             this.Tipo = tipo;
         }
-        
+
+        public void ExcluirVeic() { 
+        }
     }
 }
